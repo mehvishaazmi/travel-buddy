@@ -1,37 +1,41 @@
 'use client'
 
-import { DashboardSidebar } from '@/components/dashboard/sidebar'
-import { DashboardHeader } from '@/components/dashboard/header'
-import { ExpensesList } from '@/components/dashboard/expenses-list'
-import { ExpenseSplitSummary } from '@/components/dashboard/expense-split-summary'
-import { GroupMembersList } from '@/components/dashboard/group-members-list'
-import { SidebarProvider, SidebarInset } from '@/components/ui/sidebar'
+import Link from 'next/link'
+import { Button } from '@/components/ui/button'
 
 export default function ExpensesPage() {
   return (
-    <SidebarProvider>
-      <DashboardSidebar />
-      <SidebarInset>
-        <DashboardHeader />
-        <div className="flex-1 overflow-auto p-4 md:p-6">
-          <div className="mb-6">
-            <h1 className="text-2xl font-bold text-foreground">Expense Tracker</h1>
-            <p className="text-muted-foreground">
-              Track and split expenses with your travel group
-            </p>
-          </div>
-          
-          <div className="grid gap-6 lg:grid-cols-3">
-            <div className="lg:col-span-2 flex flex-col gap-6">
-              <ExpensesList />
-            </div>
-            <div className="flex flex-col gap-6">
-              <ExpenseSplitSummary />
-              <GroupMembersList />
-            </div>
-          </div>
+    <div className="min-h-screen bg-background p-6 md:p-8">
+      <div className="mx-auto max-w-5xl rounded-xl border bg-card p-6 shadow-sm">
+        <div className="mb-6">
+          <h1 className="text-2xl font-bold text-foreground">
+            Expense Tracker
+          </h1>
+          <p className="text-muted-foreground">
+            Manage expenses from your trip pages.
+          </p>
         </div>
-      </SidebarInset>
-    </SidebarProvider>
+
+        <div className="grid gap-4 sm:grid-cols-2">
+          <Link href="/dashboard">
+            <Button className="w-full">Go to My Trips</Button>
+          </Link>
+
+          <Link href="/create-trip">
+            <Button variant="outline" className="w-full">
+              Create New Trip
+            </Button>
+          </Link>
+        </div>
+
+        <div className="mt-6 rounded-lg border bg-background p-4">
+          <p className="text-sm text-muted-foreground">
+            This page was simplified for production deployment. Use individual
+            trip pages to add members, add expenses, split costs, make payments,
+            chat, and generate AI plans.
+          </p>
+        </div>
+      </div>
+    </div>
   )
 }
