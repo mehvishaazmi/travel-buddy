@@ -56,9 +56,46 @@ AI:
 - Use AI Trip Planner for suggestions
 - Chat with group members
 
-## Screenshots
+## 📸 Screenshots
 
-📸 Screenshots
+### 🏠 Landing Page
+
+<img src="./screenshorts/landingpage1.png" width="800"/>
+<img src="./screenshorts/landingpage2.png" width="800"/>
+<img src="./screenshorts/landingpage3.png" width="800"/>
+<img src="./screenshorts/landingpage4.png" width="800"/>
+<img src="./screenshorts/landingpage5.png" width="800"/>
+<img src="./screenshorts/landingpage6.png" width="800"/>
+
+---
+
+### 🧳 Create Trip
+
+<img src="./screenshorts/createtrip.png" width="800"/>
+
+---
+
+### 📊 My Trips Dashboard
+
+<img src="./screenshorts/mytrips.png" width="800"/>
+
+---
+
+### 🔍 Explore Trips
+
+<img src="./screenshorts/exploretrip.png" width="800"/>
+
+---
+
+### 🤝 Collaborations
+
+<img src="./screenshorts/collaborations.png" width="800"/>
+
+---
+
+### ✅ Active Collaborations
+
+<img src="./screenshorts/activecollaborations.png" width="800"/>s
 
 
 
