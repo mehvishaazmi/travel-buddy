@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <a href="https://your-vercel-url.vercel.app">
+  <a href="[https://your-vercel-url.vercel.app](https://travel-buddy-alpha-beige.vercel.app/)">
     <img src="https://img.shields.io/badge/🌐 Live Demo-Click Here-green?style=for-the-badge">
   </a>
 </p>
